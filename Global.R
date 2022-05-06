@@ -7,8 +7,7 @@ library(tidyverse)
 library(XML)
 
 # Preliminary Data Cleaning
-##data <- readxl::read_xlsx("C:/Users/Daniel Oakes/OneDrive - Cardiff University/NCMH_2022_OD/NCMH_RShiny_Participant_Identification/Practice/Participant_Identification_Dummy_Data.xlsx")
-data <- download.file(url = "https://netstorage-mwe.cf.ac.uk/NetStorage/DriveS_D01/PSYCM/NCMH/NCMH/NCMH Database/ID numbers.xlsx", destfile = "local.xlsx", mode = "wb")
+data <- readxl::read_xlsx("/Participant_Identification_Dummy_Data.xlsx")
 data$study_id <- gsub("[^0-9_]", "", data$study_id)
 data$first_name <- gsub("[^a-z]", "", tolower(data$first_name))
 data$middle_name <- gsub("[^a-z,]", "", tolower(data$middle_name))
