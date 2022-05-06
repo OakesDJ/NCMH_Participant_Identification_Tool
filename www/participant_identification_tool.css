@@ -1,0 +1,43 @@
+html { 
+  
+  font-family: Arial;
+  
+}
+
+body { 
+  
+  background: #FFFFF0;
+  color: #000000;
+  font-family: Arial;
+  margin: 5;
+  overflow-x: hidden;
+
+}
+
+#nparticipants {
+  
+  font-weight: bold;
+  background-color: white;
+  padding: 5px;
+  
+}
+
+.well { 
+  
+  background-color: #FFFFFF;
+  
+}
+
+tbody{ 
+  
+  font-size: 80%;
+  background-color: #FFFFFF;
+  
+}
+
+thead { 
+  
+  background-color: #FFFFFF;
+  
+  
+}
